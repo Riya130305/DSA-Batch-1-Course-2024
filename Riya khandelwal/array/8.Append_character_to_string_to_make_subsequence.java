@@ -1,0 +1,26 @@
+class Solution {
+    public int appendCharacters(String s, String t) {
+        int i=0;
+        int j=0;
+        int n=s.length();
+        int m=t.length();
+int total=0;
+        while(i<n && j<m)
+        {
+            if(s.charAt(i)==t.charAt(j)){
+                i++;
+                j++;
+
+            }
+            else{
+                 i++;
+            }
+        }
+        return (m-j);
+
+    }
+}
+
+//T.C = O(n)
+
+//  S.C= O(1)
